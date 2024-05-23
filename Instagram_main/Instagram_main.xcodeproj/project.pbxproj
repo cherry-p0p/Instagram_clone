@@ -16,6 +16,8 @@
 		9F72C2BA2BFEDE9E003D1A7F /* Instagram_mainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72C2B92BFEDE9E003D1A7F /* Instagram_mainUITestsLaunchTests.swift */; };
 		9F72C2C92BFEE281003D1A7F /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72C2C82BFEE281003D1A7F /* TopBarView.swift */; };
 		9F72C2CD2BFF1960003D1A7F /* TabBarIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72C2CC2BFF1960003D1A7F /* TabBarIView.swift */; };
+		9F72C2CF2BFF484F003D1A7F /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72C2CE2BFF484F003D1A7F /* StoriesView.swift */; };
+		9F72C2D12BFF560C003D1A7F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F72C2D02BFF560C003D1A7F /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		9F72C2B92BFEDE9E003D1A7F /* Instagram_mainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_mainUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F72C2C82BFEE281003D1A7F /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		9F72C2CC2BFF1960003D1A7F /* TabBarIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIView.swift; sourceTree = "<group>"; };
+		9F72C2CE2BFF484F003D1A7F /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		9F72C2D02BFF560C003D1A7F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				9F72C29C2BFEDE9D003D1A7F /* Instagram_mainApp.swift */,
 				9F72C29E2BFEDE9D003D1A7F /* ContentView.swift */,
 				9F72C2C82BFEE281003D1A7F /* TopBarView.swift */,
+				9F72C2CE2BFF484F003D1A7F /* StoriesView.swift */,
+				9F72C2D02BFF560C003D1A7F /* PostView.swift */,
 				9F72C2CC2BFF1960003D1A7F /* TabBarIView.swift */,
 				9F72C2A02BFEDE9E003D1A7F /* Assets.xcassets */,
 				9F72C2A22BFEDE9E003D1A7F /* Preview Content */,
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F72C29F2BFEDE9D003D1A7F /* ContentView.swift in Sources */,
+				9F72C2CF2BFF484F003D1A7F /* StoriesView.swift in Sources */,
 				9F72C2CD2BFF1960003D1A7F /* TabBarIView.swift in Sources */,
 				9F72C2C92BFEE281003D1A7F /* TopBarView.swift in Sources */,
+				9F72C2D12BFF560C003D1A7F /* PostView.swift in Sources */,
 				9F72C29D2BFEDE9D003D1A7F /* Instagram_mainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

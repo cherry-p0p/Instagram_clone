@@ -12,6 +12,16 @@ struct ContentView: View {
         VStack {
             TopBarView()
             
+            Divider()
+            
+            StoriesView()
+            
+            Divider()
+            
+            PostView()
+            
+            Divider()
+            
             TabBarIView()
         }
         .padding()
