@@ -40,9 +40,16 @@ struct PostView: View {
                 }
                 
                 // 게시물 사진
-                Image("Post_2")
-                    .resizable()
-                    .frame(width: 370, height: 370)
+                ScrollView (.horizontal, showsIndicators: false) {
+                    HStack (alignment: .center, spacing: 30) {
+                        Image("Post_2")
+                            .resizable()
+                            .frame(width: 370, height: 370)
+                        Image("Post_8")
+                            .resizable()
+                            .frame(width: 370, height: 370)
+                    }
+                }
                 
                 // 좋아요, 댓글, 북마크 등등
                 HStack {

@@ -19,6 +19,7 @@ struct TopBarView: View {
                 .padding(.trailing, 15)
         }
         Spacer()
+        
     }
 }
  

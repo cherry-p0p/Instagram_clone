@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Instagram_main
 //
-//  Created by 채리원 on 5/23/24.
+//  Created by 채리원 on 5/31/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         VStack {
             TopBarView()
@@ -29,5 +29,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
