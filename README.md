@@ -45,6 +45,15 @@
 
 
 - **🌸네이밍 규칙🌸**
+
+            | 이름 | 구현파트 |
+            | --- | --- |
+            | Eva | Login / Search |
+            | Cherry  | Feed |
+            | Wis  | Profile |
+            | Dongdong  | DM / Reels |
+
+
     - Swift (swift file)
         - 구현파트View
   
