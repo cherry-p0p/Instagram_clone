@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct wis_ContentView: View {
     init() {
         // Customize the appearance of the tab bar
         let appearance = UITabBarAppearance()
@@ -88,5 +88,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ContentView()
+    wis_ContentView()
 }
