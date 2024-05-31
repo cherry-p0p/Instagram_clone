@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TopBarView: View {
+struct cherry_TopBarView: View {
     var body: some View {
         HStack {
             Image("TopBar_1")
@@ -24,5 +24,5 @@ struct TopBarView: View {
 }
  
 #Preview {
-    TopBarView()
+    cherry_TopBarView()
 }

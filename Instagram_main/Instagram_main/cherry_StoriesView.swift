@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct StoriesView: View {
+struct cherry_StoriesView: View {
     var body: some View {
         ScrollView (.horizontal, showsIndicators: false) {
             HStack {
@@ -97,5 +97,5 @@ struct StoriesView: View {
 }
 
 #Preview {
-    StoriesView()
+    cherry_StoriesView()
 }

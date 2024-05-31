@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PostView: View {
+struct cherry_PostView: View {
     var body: some View {
         ScrollView {
             VStack {
@@ -92,5 +92,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView()
+    cherry_PostView()
 }

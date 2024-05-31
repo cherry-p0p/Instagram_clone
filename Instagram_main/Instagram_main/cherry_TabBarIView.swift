@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabBarIView: View {
+struct cherry_TabBarIView: View {
     var body: some View {
         Spacer()
         HStack (spacing: 45) {
@@ -21,5 +21,5 @@ struct TabBarIView: View {
 }
 
 #Preview {
-    TabBarIView()
+    cherry_TabBarIView()
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct Instagram_mainApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            cherry_MainView()
         }
     }
 }

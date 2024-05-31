@@ -7,27 +7,27 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct cherry_MainView: View {
     var body: some View {
         VStack {
-            TopBarView()
+            cherry_TopBarView()
             
             Divider()
             
-            StoriesView()
+            cherry_StoriesView()
             
             Divider()
             
-            PostView()
+            cherry_PostView()
             
             Divider()
             
-            TabBarIView()
+            cherry_TabBarIView()
         }
         .padding()
     }
 }
 
 #Preview {
-    MainView()
+    cherry_MainView()
 }
