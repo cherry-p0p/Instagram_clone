@@ -20,7 +20,7 @@
             
             | type | description |
             | --- | --- |
-            | Add | 새로운 기능 추가 |
+            | Feat | 새로운 기능 추가 |
             | Fix  | 버그 수정 |
             | Docs  | 문서 추가/수정 |
             | Refactor  | 코드 리펙토링 |
@@ -46,12 +46,12 @@
 
 - **🌸네이밍 규칙🌸**
 
-            | 이름 | 구현파트 |
-            | --- | --- |
-            | Eva | Login / Search |
-            | Cherry  | Feed |
-            | Wis  | Profile |
-            | Dongdong  | DM / Reels |
+            |   이름   |     구현파트      |
+            | ------- | --------------- |
+            |   Eva   | Login / Search  |
+            | Cherry  |       Feed      |
+            |   Wis   |     Profile     |
+            | Dongdong|   DM / Reels    |
 
 
     - Swift (swift file)
