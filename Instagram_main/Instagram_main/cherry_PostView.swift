@@ -115,7 +115,7 @@ struct cherry_PostView: View {
                             .font(.system(size: 17, weight: .bold))
                         Text(comment)
                     }
-                    .padding(.trailing, 270)
+                    .padding(.trailing, 250)
                     .padding(.vertical, 3)
                 }
                 
