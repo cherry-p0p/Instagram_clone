@@ -28,6 +28,7 @@ struct cherry_MainView: View {
     }
 }
 
+
 #Preview {
     cherry_MainView()
 }
