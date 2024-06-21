@@ -20,12 +20,10 @@ struct cherry_MainView: View {
             
             cherry_PostView()
             
-            Divider()
-            
-            cherry_TabBarIView()
         }
         .padding()
     }
+
 }
 
 

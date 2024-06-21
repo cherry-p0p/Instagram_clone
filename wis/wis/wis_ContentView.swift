@@ -19,7 +19,7 @@ struct wis_ContentView: View {
     
     var body: some View {
         TabView {
-            HomeView()
+            cherry_MainView()
                 .tabItem {
                     Image("home")
                 }
