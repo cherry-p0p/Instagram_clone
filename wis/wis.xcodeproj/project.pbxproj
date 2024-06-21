@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37A4E5B22C2586DD009C6834 /* wis_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A4E5B12C2586DD009C6834 /* wis_profile.swift */; };
 		37FACD912C09CC430015B4FC /* wisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FACD902C09CC430015B4FC /* wisApp.swift */; };
 		37FACD932C09CC430015B4FC /* wis_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FACD922C09CC430015B4FC /* wis_ContentView.swift */; };
 		37FACD952C09CC430015B4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FACD942C09CC430015B4FC /* Assets.xcassets */; };
@@ -15,6 +14,10 @@
 		37FACDA22C09CC440015B4FC /* wisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FACDA12C09CC440015B4FC /* wisTests.swift */; };
 		37FACDAC2C09CC440015B4FC /* wisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FACDAB2C09CC440015B4FC /* wisUITests.swift */; };
 		37FACDAE2C09CC440015B4FC /* wisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FACDAD2C09CC440015B4FC /* wisUITestsLaunchTests.swift */; };
+		4F59AB412C258A270046451F /* wis_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F59AB402C258A270046451F /* wis_profile.swift */; };
+		4F59AB452C258ACE0046451F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F59AB422C258ACD0046451F /* SearchView.swift */; };
+		4F59AB462C258ACE0046451F /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F59AB432C258ACD0046451F /* ExploreView.swift */; };
+		4F59AB472C258ACE0046451F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F59AB442C258ACE0046451F /* LoginView.swift */; };
 		90E495AD2C257C0C00E75122 /* dongdong_DMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E495AC2C257C0C00E75122 /* dongdong_DMView.swift */; };
 		90E495AF2C257C1D00E75122 /* dongdong_DMChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E495AE2C257C1D00E75122 /* dongdong_DMChatView.swift */; };
 		90E495B42C257D6000E75122 /* Reel1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 90E495B02C257D5E00E75122 /* Reel1.mp4 */; };
@@ -49,7 +52,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37A4E5B12C2586DD009C6834 /* wis_profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = wis_profile.swift; path = "../../../wis 복사본/wis/wis_profile.swift"; sourceTree = "<group>"; };
 		37FACD8D2C09CC430015B4FC /* wis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FACD902C09CC430015B4FC /* wisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wisApp.swift; sourceTree = "<group>"; };
 		37FACD922C09CC430015B4FC /* wis_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wis_ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,10 @@
 		37FACDA72C09CC440015B4FC /* wisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FACDAB2C09CC440015B4FC /* wisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wisUITests.swift; sourceTree = "<group>"; };
 		37FACDAD2C09CC440015B4FC /* wisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F59AB402C258A270046451F /* wis_profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wis_profile.swift; sourceTree = "<group>"; };
+		4F59AB422C258ACD0046451F /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4F59AB432C258ACD0046451F /* ExploreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		4F59AB442C258ACE0046451F /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		90E495AC2C257C0C00E75122 /* dongdong_DMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dongdong_DMView.swift; sourceTree = "<group>"; };
 		90E495AE2C257C1D00E75122 /* dongdong_DMChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dongdong_DMChatView.swift; sourceTree = "<group>"; };
 		90E495B02C257D5E00E75122 /* Reel1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Reel1.mp4; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 		37FACD8F2C09CC430015B4FC /* wis */ = {
 			isa = PBXGroup;
 			children = (
+				4F59AB432C258ACD0046451F /* ExploreView.swift */,
+				4F59AB442C258ACE0046451F /* LoginView.swift */,
+				4F59AB422C258ACD0046451F /* SearchView.swift */,
 				37FACD902C09CC430015B4FC /* wisApp.swift */,
 				90E495B82C257D7700E75122 /* ModelForReels */,
 				37FACD922C09CC430015B4FC /* wis_ContentView.swift */,
@@ -139,8 +148,8 @@
 				9F0B2B1E2C2579DB0033CFE1 /* cherry_StoriesView.swift */,
 				9F0B2B212C2579DB0033CFE1 /* cherry_TopBarView.swift */,
 				37FACD942C09CC430015B4FC /* Assets.xcassets */,
-				37A4E5B12C2586DD009C6834 /* wis_profile.swift */,
 				37FACD962C09CC430015B4FC /* Preview Content */,
+				4F59AB402C258A270046451F /* wis_profile.swift */,
 			);
 			path = wis;
 			sourceTree = "<group>";
@@ -326,15 +335,18 @@
 				9F0B2B262C2579DB0033CFE1 /* cherry_TopBarView.swift in Sources */,
 				37FACD932C09CC430015B4FC /* wis_ContentView.swift in Sources */,
 				90E495BA2C257DAE00E75122 /* Reel.swift in Sources */,
+				4F59AB462C258ACE0046451F /* ExploreView.swift in Sources */,
 				90E495BC2C257DCF00E75122 /* ReelMediaFile.swift in Sources */,
 				90E495C12C257E5500E75122 /* ReelsView.swift in Sources */,
 				90E495BF2C257E4500E75122 /* CustomVideoPlayer.swift in Sources */,
 				90E495AD2C257C0C00E75122 /* dongdong_DMView.swift in Sources */,
 				9F0B2B222C2579DB0033CFE1 /* cherry_PostView.swift in Sources */,
 				37FACD912C09CC430015B4FC /* wisApp.swift in Sources */,
+				4F59AB452C258ACE0046451F /* SearchView.swift in Sources */,
 				90E495AF2C257C1D00E75122 /* dongdong_DMChatView.swift in Sources */,
 				9F0B2B232C2579DB0033CFE1 /* cherry_StoriesView.swift in Sources */,
-				37A4E5B22C2586DD009C6834 /* wis_profile.swift in Sources */,
+				4F59AB472C258ACE0046451F /* LoginView.swift in Sources */,
+				4F59AB412C258A270046451F /* wis_profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

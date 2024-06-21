@@ -18,33 +18,36 @@ struct wis_ContentView: View {
     }
     
     var body: some View {
-        TabView {
-            cherry_MainView()
-                .tabItem {
-                    Image("home")
-                }
-            
-            CommunityView()
-                .tabItem {
-                    Image("search")
-                }
-            
-            NearbyView()
-                .tabItem {
-                    Image("plus")
-                }
-            
-            ChatView()
-                .tabItem {
-                    Image("video")
-                }
-            
-            ProfileView()
-                .tabItem {
-                    Image("tabProfil")
-                }
+        NavigationView {
+            TabView {
+                cherry_MainView()
+                    .tabItem {
+                        Image("home")
+                    }
+                
+                CommunityView()
+                    .tabItem {
+                        Image("search")
+                    }
+                
+                NearbyView()
+                    .tabItem {
+                        Image("plus")
+                    }
+                
+                ChatView()
+                    .tabItem {
+                        Image("video")
+                    }
+                
+                ProfileView()
+                    .tabItem {
+                        Image("tabProfil")
+                    }
+            }
+            .accentColor(.black) // This sets the color for the selected tab item
         }
-        .accentColor(.black) // This sets the color for the selected tab item
+        .navigationBarBackButtonHidden(true) // 상단의 뒤로가기 버튼을 숨김
     }
 }
 
@@ -57,9 +60,7 @@ struct HomeView: View {
 
 struct CommunityView: View {
     var body: some View {
-        Text("search")
-            .font(.largeTitle)
-            .padding()
+        SearchView()
     }
 }
 

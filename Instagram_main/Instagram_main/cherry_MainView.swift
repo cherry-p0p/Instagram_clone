@@ -9,19 +9,32 @@ import SwiftUI
 
 struct cherry_MainView: View {
     var body: some View {
-        VStack {
-            cherry_TopBarView()
-            
-            Divider()
-            
-            cherry_StoriesView()
-            
-            Divider()
-            
-            cherry_PostView()
-            
+        NavigationView {
+            VStack {
+                HStack {
+                    Image("TopBar_1")
+                        .padding(.leading, 15)
+                    Spacer()
+                    Image("TopBar_2")
+                        .padding(.trailing, 10)
+                    NavigationLink(destination: dongdong_DMView()) {
+                        Image("TopBar_3")
+                            .padding(.trailing, 15)
+                    }
+                }
+                
+                Divider()
+                
+                cherry_StoriesView()
+                
+                Divider()
+                
+                cherry_PostView()
+                
+            }
+            .padding()
         }
-        .padding()
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 
 }
