@@ -14,7 +14,6 @@ struct cherry_TopBarView: View {
                         .padding(.trailing, 15)
                 }
             }
-            Spacer()
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

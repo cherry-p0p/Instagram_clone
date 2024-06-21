@@ -7,12 +7,23 @@
 
 import SwiftUI
 
-struct wis_profil: View {
-    @State private var selectedButton: ButtonType? = .shape // shape 버튼을 초기 선택으로 설정
+struct wis_profile: View {
+    // First Tab Image...
+    @State var selectedTab: String = "square.grid.3x3"
+    //For Smooth Sliding Effect
+    @Namespace var animation
     
-    enum ButtonType {
+    //@State private var selectedButton: ButtonType? = .shape // shape 버튼을 초기 선택으로 설정
+    
+    /*enum ButtonType {
         case shape, video, person
-    }
+    }*/
+    
+    let columns = [GridItem(.flexible()),
+                   GridItem(.flexible()),
+                   GridItem(.flexible())]
+    
+    let imageDimension = UIScreen.main.bounds.width / 3
     var body: some View {
         VStack{
             // nav bar
@@ -28,6 +39,7 @@ struct wis_profil: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                         .bold()
+                        
                     
                     Image(systemName: "chevron.down")
                         .font(.caption)
@@ -64,7 +76,7 @@ struct wis_profil: View {
                         .frame(width: 20, height: 20)
                         .padding(.leading, 10)
                 }
-            }
+            }.padding()
             
             ScrollView{
                 VStack(alignment: .leading){
@@ -79,7 +91,7 @@ struct wis_profil: View {
                         Spacer()
                         
                         VStack(spacing: 2){
-                            Text("5")
+                            Text("6")
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                             Text("게시물")
@@ -105,7 +117,7 @@ struct wis_profil: View {
                             Text("팔로잉")
                                 .font(.caption)
                         }.padding(.trailing, 30)
-                    }
+                    }.padding(.horizontal)
                     // user info
                     VStack(alignment: .leading, spacing: 3) {
                         Text("아요단")
@@ -115,7 +127,7 @@ struct wis_profil: View {
                         
                         Text("UMC 6기 아요단")
                             .font(.caption)
-                    }
+                    }.padding(.horizontal)
                     
                     // action buttons
                     HStack{
@@ -143,7 +155,7 @@ struct wis_profil: View {
                                 .background(RoundedRectangle(cornerRadius: 8)
                                     .fill(Color(.systemGray5)))
                         }
-                    }
+                    }.padding(.horizontal)
                     
                     // story
                     ScrollView(.horizontal){
@@ -191,8 +203,8 @@ struct wis_profil: View {
                                     .font(.footnote)
                             }.padding(.all, 10)
                         }
-                    }
-                    
+                    }.padding(.horizontal)
+                    /*
                     // media type
                     HStack(alignment: .center, spacing: 0){
                         Button(action:{
@@ -239,11 +251,113 @@ struct wis_profil: View {
                                     .foregroundColor(selectedButton == .person ? .black : .gray)
                             }
                         }
-                    }
+                    }.padding(.horizontal)
+                    */
                     
+                    // Sticky Top Segmented Bar ...
+                    HStack(spacing: 0){
+                        TabBarButton(image: "square.grid.3x3", isSystemImage: true, animation: animation, selectedTab: $selectedTab)
+                        TabBarButton(image: "video", isSystemImage: false, animation: animation, selectedTab: $selectedTab)
+                        TabBarButton(image: "person.crop.square", isSystemImage: true, animation: animation, selectedTab: $selectedTab)
+                    }
+                    // Max Frame
+                    .frame(height: 50, alignment: .bottom)
+                    
+                    ZStack{
+                        
+                        // I'm Simply Using One Temp View
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 3), spacing: 4,  content: {
+                            ForEach(1...6, id: \.self){index in
+                                 // For Getting Width For Image
+                                GeometryReader{proxy in
+                                    let width = proxy.frame(in: .global).width
+                                    
+                                    ImageView(index: index, width: width)
+                                }.frame(height: 120)
+                            }
+                            
+                        })
+                    }
+                    /*
+                    //grid
+                    LazyVGrid(columns: columns) {
+                        ForEach(0 ..< 15, id: \.self) { index in
+                            Image("1주차")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: imageDimension, height: imageDimension)
+                                .border(Color.white)
+                                .clipped()
+                        }
+                    }*/
                 }
             }
-        }.padding()
+        }
     }
 }
 
+struct ImageView: View {
+    var index: Int
+    var width: CGFloat
+    
+    var body: some View {
+        //Looping Image
+        VStack{
+            let imageName = index > 6 ? index - (6 * (index / 6)) == 0 ? 6 : index - (6 * (index / 6)) : index
+            
+            Image("\(imageName)주차")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: width, height: 120)
+            // Image Problem
+            // If use cornerradius it will slove..
+                .cornerRadius(0)
+        }
+    }
+}
+
+struct TabBarButton: View {
+    let imageDimension = UIScreen.main.bounds.width / 3
+    var image: String
+    //Since we're having asset Image...
+    var isSystemImage: Bool
+    var animation: Namespace.ID
+    @Binding var selectedTab: String
+    
+    var body: some View{
+        Button(action: {
+            withAnimation(.easeInOut){
+                selectedTab = image
+            }
+        }, label: {
+            VStack(spacing: 12) {
+                
+                (
+                    isSystemImage ? Image(systemName: image) : Image(image)
+                )
+                .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 28, height: 28)
+                .foregroundColor(selectedTab == image ? .primary : .gray)
+                
+                ZStack{
+                    if selectedTab == image{
+                        Rectangle()
+                            .fill(Color.primary)
+                        // For Smooth sliding effect...
+                            .matchedGeometryEffect(id: "TAB", in: animation)
+                    }
+                    else{
+                        Rectangle()
+                            .fill(Color.clear)
+                    }
+                }.frame(height: 1)
+            }
+        })
+    }
+}
+
+#Preview {
+    wis_profile()
+}

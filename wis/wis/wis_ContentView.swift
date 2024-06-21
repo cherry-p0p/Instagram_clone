@@ -79,7 +79,7 @@ struct ChatView: View {
 
 struct ProfileView: View {
     var body: some View {
-        wis_profil()
+        wis_profile()
     }
 }
 
