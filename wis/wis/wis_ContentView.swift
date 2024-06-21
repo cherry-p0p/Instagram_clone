@@ -51,9 +51,7 @@ struct wis_ContentView: View {
 struct HomeView: View {
     
     var body: some View {
-        Text("home")
-            .font(.largeTitle)
-            .padding()
+        cherry_MainView()
     }
 }
 
@@ -75,9 +73,7 @@ struct NearbyView: View {
 
 struct ChatView: View {
     var body: some View {
-        Text("video")
-            .font(.largeTitle)
-            .padding()
+        ReelsView()
     }
 }
 
