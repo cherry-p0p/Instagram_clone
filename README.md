@@ -1,3 +1,14 @@
+# SwiftUI를 사용한 인스타그램 클론코딩
+
+## 팀원
+|   이름   | 구현 파트        |
+|:--------:|:----------------:|
+| <img src="https://github.com/sangyup12.png" width="50" height="50"> [Eva](https://github.com/sangyup12) | Login / Search  |
+| <img src="https://github.com/cherry-p0p.png" width="50" height="50"> [Cherry](https://github.com/cherry-p0p) | Feed |
+| <img src="https://github.com/leeseulgi0208.png" width="50" height="50"> [Wis](https://github.com/leeseulgi0208) | Profile |
+| <img src="https://github.com/dogsub.png" width="50" height="50"> [Dongdong](https://github.com/dogsub) | DM / Reels |
+
+
 - **commit 규칙**
     
     ```
@@ -27,9 +38,6 @@
             | Test  | 테스트 코드, 리펙토링 테스트 코드 추가 |
             | Move | 파일, 폴더 경로 변경 |
 
-        
-
-  
     - **Commit 하는법(중요)**
         - 기본적으로 **터미널**로 파일을 직접 지정해 commit작업을 수행한다.
         - 기능을 한번에 커밋하는게 아닌 작은 기능 하나하나씩 커밋 해가면서 진행한다.
@@ -45,14 +53,6 @@
 
 
 - **🌸네이밍 규칙🌸**
-
-            |   이름   |     구현파트      |
-            | ------- | --------------- |
-            |   Eva   | Login / Search  |
-            | Cherry  |       Feed      |
-            |   Wis   |     Profile     |
-            | Dongdong|   DM / Reels    |
-
 
     - Swift (swift file)
         - 구현파트View
